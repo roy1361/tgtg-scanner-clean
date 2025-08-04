@@ -77,4 +77,4 @@ On first run, the scanner will:
 ## More Information
 
 - [GitHub Repository](https://github.com/Der-Henning/tgtg)
-- [Configuration Wiki](https://github.com/Der-Henning/tgtg/wiki/Configuration) 
+- [Configuration Wiki](https://github.com/Der-Henning/tgtg/wiki/Configuration) # Trigger deployment
