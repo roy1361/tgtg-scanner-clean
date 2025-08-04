@@ -10,4 +10,4 @@ WORKDIR /app
 # COPY config.ini /app/config.ini
 
 # Start the TGTG scanner
-CMD ["python", "-m", "tgtg"] 
+CMD ["tgtg"] 
