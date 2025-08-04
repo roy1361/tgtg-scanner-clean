@@ -1,0 +1,22 @@
+services:
+  scanner:
+    image: derhenning/tgtg:latest-alpine           ## pre build image from docker hub
+    # image: tgtg-scanner:latest                   ## locally build image
+    # build:                                       ## build image with compose
+    #   context: .
+    #   dockerfile: docker/Dockerfile.alpine
+    environment:
+      - TGTG_USERNAME=mgdbggdydb@privaterelay.appleid.com
+      - SLEEP_TIME=60
+      - TZ=Europe/Berlin
+      - LOCALE=en_US
+      - CONSOLE=true
+      - TELEGRAM=true
+      - TELEGRAM_TOKEN=8375609952:AAElzKP1zmO_3Nz8dWg0vK28NVhd908sjy4
+      - TELEGRAM_CHAT_IDS=1904839014
+    volumes:
+    - ./config.ini:/app/config.ini:ro             ## mount config file
+    - tokens:/tokens             ## volume to save TGTG credentials to reuse on next start up and avoid login mail
+
+volumes:
+  tokens:
