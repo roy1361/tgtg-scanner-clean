@@ -12,7 +12,7 @@ services:
       - LOCALE=en_US
       - CONSOLE=true
       - TELEGRAM=true
-      - TELEGRAM_TOKEN=8375609952:AAElzKP1zmO_3Nz8dWg0vK28NVhd908sjy4
+      - TELEGRAM_TOKEN=YOUR_TELEGRAM_TOKEN_HERE
       - TELEGRAM_CHAT_IDS=1904839014
     volumes:
     - ./config.ini:/app/config.ini:ro             ## mount config file
