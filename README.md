@@ -17,11 +17,17 @@ This directory contains the TGTG (Too Good To Go) scanner setup for monitoring y
 
 If you prefer to configure manually:
 
-1. **Edit `config.ini`:**
+1. **Set up environment variables:**
+   ```bash
+   cp .env.example .env
+   # Edit .env with your actual values
+   ```
+
+2. **Edit `config.ini` (alternative method):**
    - Set your TGTG email address in the `[TGTG]` section
    - Enable your preferred notification method(s)
 
-2. **Start the scanner:**
+3. **Start the scanner:**
    ```bash
    docker compose up -d
    ```
